@@ -1,0 +1,66 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/login_gradient_background">
+
+    <ImageView
+        android:id="@+id/ivProfilePic"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/profilepic"
+        android:clipToOutline="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:background="@drawable/login_gradient_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivProfilePic"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="First name"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Last name"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvMoreInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-2dp"
+            android:text="more information"
+            android:textSize="14sp"
+            android:focusable="true"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:textColor="#5C50BA" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/login_gradient_background"
+        app:layout_constraintTop_toBottomOf="@+id/ivProfilePic" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
